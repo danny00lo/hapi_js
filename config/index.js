@@ -1,6 +1,6 @@
 const { env } = process;
 
 module.exports = {
-  host: env.HOST,
-  port: env.PORT,  
+  HOST: env.HOST,
+  PORT: env.PORT,  
 }
