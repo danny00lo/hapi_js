@@ -1,6 +1,8 @@
 const { env } = process;
 
-module.exports = {
-  HOST: env.HOST,
-  PORT: env.PORT,  
-}
+const config = {
+  host: env.HOST,
+  port: env.PORT,
+  jwtSecret: env.JWT_SECRET,
+};
+module.exports = config;
